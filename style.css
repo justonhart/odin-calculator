@@ -1,0 +1,50 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 12px;
+	padding: 2vmin;
+	gap: 2vmin;
+}
+
+#output{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-basis: 10vmin;
+	border: 2px solid black;
+	border-radius: 12px;
+	font-size: 3.5rem;
+	padding: 1rem;
+}
+
+.buttonRow{
+	display:flex;
+	gap: 2vmin;
+}
+
+.buttonRow button{
+	background-color: inherit;
+	border: 2px solid black;
+	font-size: x-large;
+	font-family: monospace;
+	border-radius: 12px;
+	width: 15vmin;
+	height: 15vmin;
+}
+
+.buttonRow button:active{
+	background-color: lightgrey;
+}
