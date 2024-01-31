@@ -17,8 +17,9 @@ body{
 	border-radius: 12px;
 	padding: 2vmin;
 	gap: 2vmin;
-	width: 45vmin;
-	height: 75vmin;
+	width: 60vh;
+	height: 80vh;
+	margin: 0 10vw;
 }
 
 #topRow{
@@ -28,14 +29,15 @@ body{
 }
 
 .buttonRow{
-	display:flex;
 	flex: 1;
+	display:flex;
 	gap: 2vmin;
 }
 
 #output{
 	display:flex;
-	flex: 4;
+	flex-grow: 3.33;
+	flex-basis: 0;
 	justify-content: flex-end;
 	align-items: center;
 	border: 2px solid black;
@@ -45,7 +47,8 @@ body{
 }
 
 button{
-	flex: 1;
+	flex-grow: 1;
+	flex-basis: 0;
 	background-color: inherit;
 	border: 2px solid black;
 	font-size: 3.5vmin;
@@ -55,4 +58,12 @@ button{
 
 button:active{
 	background-color: lightgrey;
+}
+
+#c:active{
+	background-color: pink;
+}
+
+#equal:active{
+	background-color: lightgreen;
 }
