@@ -17,34 +17,42 @@ body{
 	border-radius: 12px;
 	padding: 2vmin;
 	gap: 2vmin;
+	width: 45vmin;
+	height: 75vmin;
 }
 
-#output{
+#topRow{
 	display:flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex-basis: 10vmin;
-	border: 2px solid black;
-	border-radius: 12px;
-	font-size: 3.5rem;
-	padding: 1rem;
+	flex: 0;
+	gap: 2vmin;
 }
 
 .buttonRow{
 	display:flex;
+	flex: 1;
 	gap: 2vmin;
 }
 
-.buttonRow button{
-	background-color: inherit;
+#output{
+	display:flex;
+	flex: 4;
+	justify-content: flex-end;
+	align-items: center;
 	border: 2px solid black;
-	font-size: x-large;
-	font-family: monospace;
 	border-radius: 12px;
-	width: 15vmin;
-	height: 15vmin;
+	font-size: 4.5vmin;
+	padding: 1rem;
 }
 
-.buttonRow button:active{
+button{
+	flex: 1;
+	background-color: inherit;
+	border: 2px solid black;
+	font-size: 3.5vmin;
+	font-family: monospace;
+	border-radius: 12px;
+}
+
+button:active{
 	background-color: lightgrey;
 }
